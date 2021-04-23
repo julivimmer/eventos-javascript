@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <div id="td">
+        <div class="banner">
+            <img src="img/banner.png" alt="Exercício de JavaScript com HTML e CSS">
+        </div>
+        <div class="data">
+            <button title="Clique uma vez para mostrar e duas para tirar" class="botaoData" onclick="document.getElementById('relogio').innerHTML = Date()" ondblclick="document.getElementById('relogio').innerHTML = ''">
+                Data e Hora
+            </button>
+            <p id="relogio"></p>
+        </div>
+        <div id="tres">
+            <div class="hover" onmouseover="mouseHover()" onmouseout="mouseHoverOut()">
+                <p class="txt1">{Este bloco muda a cor e o texto ao passar o mouse}</p>
+            </div>
+            <div class="click" onclick="clickOn()" ondblclick="clickOut()">
+                <p class="txt2">{Este bloco muda a cor e o texto ao clicar e depois ao clicar duas vezes}</p>
+            </div>
+            <div class="mult">
+                <input type="number" id="n1"> *
+                <input type="number" id="n2">
+                <input type="button" id="botaoResultado" value="Multiplique" onclick="mult()">
+                <div id="res">R: </div>
+            </div>
+        </div>
+        <div class="rodape">
+            <form action="">
+                <a href="https://github.com/julivimmer" target="_blank">
+                    <img class="git" src="img/github.png" alt="github/julivimmer" title="Visite meu github! :)" onclick="abreJanela()">
+                </a>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function mult(){
+        var x = window.document.getElementById('n1')
+        var y = window.document.getElementById('n2')
+        var res = window.document.getElementById('res')
+        var num1 = Number(x.value)
+        var num2 = Number(y.value)
+        var mult = num1 * num2;
+        res.innerHTML = `R: ${mult}`
+    }
+
+    var hover = window.document.getElementsByClassName('hover')[0]
+    function mouseHover(){
+        hover.style.backgroundColor = '#DBE47C'
+        hover.style.color = '#9D274B'
+        hover.innerText = '(～￣▽￣)～'
+    }
+    function mouseHoverOut(){
+        hover.style.backgroundColor = '#E1225C'
+        hover.style.color = '#DBE47C'
+        hover.innerText = '{evento onMouseOver}'
+    }
+
+    var click = window.document.getElementsByClassName('click')[0]
+    function clickOn(){
+        click.style.backgroundColor = '#DBE47C'
+        click.style.color = '#9D274B'
+        click.innerText = '(～￣▽￣)～'
+    }
+    function clickOut(){
+        click.style.backgroundColor = '#E1225C'
+        click.style.color = '#DBE47C'
+        click.innerText = '{evento onClick}'
+    }
+    function abreJanela(){
+        window.open("https://github.com/julivimmer","_blank","toolbar=yes,width=600,height=600")
+    }
+</script>
+</html>

@@ -1,0 +1,127 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+
+/* DIV de todas as DIVS*/
+div#td{
+    height: 660px;
+    width: 930px;
+    margin:20px auto;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+div.banner{
+    height: 230px;
+}
+
+/*Tamanho do banner*/
+img{
+    height: 230px;
+    width: 930px;
+}
+
+/*DIV onde mostra a data*/
+div.data{
+    height: 50px;
+    width: 930px;
+    line-height: 50px;
+    background-color: #E1225C;
+    color: #DBE47C;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*Botao que clica para mostrar a data*/
+button.botaoData{
+    height: 50px;
+    width: auto;
+    float: left;
+    color: #E1225C;
+    background-color: #DBE47C;
+    font-family: 'Rubik Mono One', sans-serif;
+    border: none;
+}
+
+/*DIV que envolve as outras três DIVS*/
+div#tres{
+    height: 230px;
+    width: 930px;
+    background-color: #DBE47C;
+    line-height: 230px;
+}
+
+/*DIV com o evento hover*/
+div.hover{
+    color: #DBE47C;
+    height: 230px;
+    width: 310px;
+    background-color: #E1225C;
+    float: left;
+}
+p.txt1{
+    line-height: 20px;
+    margin: 60px;
+}
+p.txt2{
+    line-height: 20px;
+    margin: 60px;
+
+}
+
+/*DIV com o evento click*/
+div.click{
+    height: 230px;
+    width: 310px;
+    background-color: #E1225C;
+    color: #DBE47C;
+    float: left;
+}
+
+/*DIV calculo*/
+div.mult{
+    height: 230px;
+    width: 310px;
+    color: #DBE47C;
+    background-color: #E1225C;
+    float: left;
+}
+
+/*DIV Resultado*/
+div#res{
+    margin-top: -190px;
+}
+
+/*Botoes dos numeros*/
+input#n1{
+    width: 50px;
+    height: 30px;
+}
+
+input#n2{
+    width: 50px;
+    height: 30px;
+}
+
+/*Botao Resultado*/
+input#botaoResultado{
+    width: 100px;
+    height: 30px;
+    color: #E1225C;
+    background-color: #DBE47C;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 10.5px;
+    border: none;
+}
+
+div.rodape{
+    height: 50px;
+    width: 930px;
+    background-color: #DBE47C;
+    line-height: 75px;
+}
+img.git{
+    height: auto;
+    width: auto;
+}
